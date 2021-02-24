@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <title>Idiot!</title>
+ <script type="text/javascript"> 
+ var image_tracker = 'orange';
+ 
+ function change(){
+ var image = document.getElementById('idiot');
+ if(image_tracker=='black'){
+ image.src='assets/white.svg';
+ image_tracker='white';
+ }
+ else{
+ image.src='assets/black.svg';
+ image_tracker='black';
+ }
+ } 
+ var timer = setInterval('change();',450); 
+</script>
+<script>
+window.onload = function playAudio() {
+document.getElementById("audio").play();
+}
+</script>
+<style>
+	html,body {
+		height: 100%;
+	}
+	body {
+		margin: 0;
+	}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%
+	}
+	audio {
+		display: none;
+	}
+</style>
+ 
+</head>
+<body>
+ 
+<audio controls src="assets/audio.mp3" id="audio" loop="loop"></audio>
+
+<img src="assets/black.svg" alt="Idiot!" id="idiot" />
+ 
+</body>
+</html>
