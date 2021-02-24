@@ -21,7 +21,7 @@
 		var timer = setInterval('change();',450); 
 	</script>
 	<script>
-		function playAudio() {
+		window.onload = function playAudio() {
 			document.getElementById("audio").play();
 		}
 	</script>
@@ -43,7 +43,7 @@
 		}
 	</style>
 </head>
-<body onload="playAudio()">
+<body>
  
 <audio controls src="assets/audio.mp3" id="audio" loop="loop"></audio>
 
