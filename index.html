@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
 
 <head>
  <title>Idiot!</title>
@@ -12,10 +12,12 @@
 			if(image_tracker=='black'){
 				image.src='assets/white.svg';
 				image_tracker='white';
+				document.getElementById('html').style.background='#fff';
 			}
 			else{
 				image.src='assets/black.svg';
 				image_tracker='black';
+				document.getElementById('html').style.background='#fff';
 			}
 		}
 
