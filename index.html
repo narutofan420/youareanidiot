@@ -21,9 +21,10 @@
 		var timer = setInterval('change();',450); 
 	</script>
 	<script>
-		window.onload = function playAudio() {
-			document.getElementById("audio").play();
-		}
+		window.onload = function play() {
+			var audio = new Audio('assets/audio.mp3');
+  			audio.play();
+		} 
 	</script>
 	<style>
 		html,body {
