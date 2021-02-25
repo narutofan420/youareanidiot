@@ -21,10 +21,8 @@
 		var timer = setInterval('change();',450); 
 	</script>
 	<script>
-		var audio = document.getElementById('audio');
-
 		window.onload = function() {
-  			audio.play();
+  			document.getElementById('audio').play();
 		} 
 	</script>
 	<style>
@@ -47,7 +45,7 @@
 </head>
 <body>
  
-<audio controls src="assets/audio.mp3" id="audio" loop="loop"></audio>
+<audio src="assets/audio.mp3" id="audio" loop="loop"></audio>
 
 <img src="assets/black.svg" alt="Idiot!" id="idiot" />
  
